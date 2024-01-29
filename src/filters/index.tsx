@@ -6,8 +6,8 @@ import {brighten} from './samples/brighten';
 import {darken} from './samples/darken';
 import {threshold} from './samples/threshold';
 import {edge} from './samples/edge';
-import {border} from './samples/border';
-import {pixelate} from './samples/pixelate';
+import {borderAverageColor} from './samples/border-average-color';
+import {borderAdjustableColor} from './samples/border-adjustable-color';
 const filters: Filter[] = [
   sampleRoseColoredGlasses,
   sampleGrid,
@@ -16,9 +16,7 @@ const filters: Filter[] = [
   darken,
   threshold,
   edge,
-  border,
-  pixelate,
-
+  borderAverageColor,
+  borderAdjustableColor,
 ];
-
 export default filters;

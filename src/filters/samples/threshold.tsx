@@ -1,9 +1,11 @@
 import type { Filter } from "../../types";
-
+type borderOptions = {
+  Threshold: number;
+};
 export const threshold: Filter = {
-  name: "Threshold",
-  apply: (pixels, width, height) => {
-    const thresholdValue = 130; 
+  name: "Black And White",
+  apply: (pixels, width, height, options) => {
+    const thresholdValue =  255*options.Threshold/100;
 
     for (let i = 0; i < pixels.length; i += 4) {
     
@@ -25,4 +27,13 @@ export const threshold: Filter = {
 
     return pixels;
   },
+  options: [
+    {
+      name: "Threshold",
+      type: "percentage",
+      default: 128,
+
+    },
+]
 };
+export default borderOptions;

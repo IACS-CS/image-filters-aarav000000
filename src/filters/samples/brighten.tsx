@@ -1,5 +1,6 @@
 import type { Filter } from "../../types";
 
+
 export const brighten: Filter = {
   name: "Brighten",
   apply: (pixels, width, height) => {
