@@ -1,9 +1,11 @@
 import type { Filter } from "../types";
 
-export const myFilter: Filter = {
-  name: "My Filter",
+export const brightenFilter: Filter = {
+
+  name: "Brighten",
+
   apply: (pixels, width, height) => {
-    /* Modify pixels... */
+
     return pixels;
   },
 };
