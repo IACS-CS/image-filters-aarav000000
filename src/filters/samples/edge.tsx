@@ -4,7 +4,7 @@ export const edge: Filter = {
   name: "Edge",
   apply: (pixels, width, height) => {
     let outputPixels = pixels.slice()
-    const colorThreshold = 30; // Adjust the color difference threshold as needed
+    const colorThreshold = 50; // Adjust the color difference threshold as needed
 
     const getColorDifference = (pixel1: number[], pixel2: number[]): number => {
  

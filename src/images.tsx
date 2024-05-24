@@ -165,4 +165,52 @@ export const images: ImageInfo[] = [
     ),
     name: "Virtual Reality View",
   },
+  {
+    filename:
+      "hawksjersey.png",
+    attribution: (
+      <span className="attribution">
+        By <a href="https://sharpphotography.co.uk/">Charles J. Sharp</a> -{" "}
+        <a
+          href="https://commons.wikimedia.org/w/index.php?curid=136415915"
+          className="license"
+        >
+          CC BY-SA 4.0
+        </a>
+      </span>
+    ),
+    name: "Hawks Jersey",
+  },
+  {
+    filename:
+      "rocketsjersey.png",
+    attribution: (
+      <span className="attribution">
+        By <a href="https://sharpphotography.co.uk/">Charles J. Sharp</a> -{" "}
+        <a
+          href="https://commons.wikimedia.org/w/index.php?curid=136415915"
+          className="license"
+        >
+          CC BY-SA 4.0
+        </a>
+      </span>
+    ),
+    name: "Rockets Jersey",
+  },
+  {
+    filename:
+      "clippersjersey.png",
+    attribution: (
+      <span className="attribution">
+        By <a href="https://sharpphotography.co.uk/">Charles J. Sharp</a> -{" "}
+        <a
+          href="https://commons.wikimedia.org/w/index.php?curid=136415915"
+          className="license"
+        >
+          CC BY-SA 4.0
+        </a>
+      </span>
+    ),
+    name: "Clippers Jersey",
+  },
 ].map((i) => ({ ...i, url: `images/${i.filename}` }));
