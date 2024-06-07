@@ -1,7 +1,7 @@
 import type { Filter } from "../../types";
 
 export const edge: Filter = {
-  name: "Edge",
+  name: "Sharper Jersey",
   apply: (pixels, width, height) => {
     let outputPixels = pixels.slice()
     const colorThreshold = 50; // Adjust the color difference threshold as needed
